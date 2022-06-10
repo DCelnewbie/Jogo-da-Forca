@@ -31,7 +31,7 @@ def jogo():
     print(f"Vc tem {maxtentativas} tentativas para acertar.")
 
     while True:
-        letra= input(f"Tentativa {tentativas+1}/{maxtentativas}: Qual letra está na palavra: ")
+        letra= input(f"Tentativa {tentativas+1}/{maxtentativas}: Qual letra está na palavra: ").lower()
         if letra == palavra:
             print(f"Parabens, vc acertou, a palavra correta era {palavra}. Deseja jogar de novo?")
             replay = input("") 
